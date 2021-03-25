@@ -121,3 +121,97 @@ Redis contains many mostly used data structures and has many optimizations on pe
 After more years of practice, data structures will be yous tools for abstraction and algorithms designing will be the natural pattern for your problem-solving.
 
 Keep curiosity and practice!
+
+
+or
+
+
+Types of data structures as well as their applications and significance of an algorithm
+
+It is vital to understand the concepts of data structures and algorithms before learning to write a code in any programming language. These are the basic concepts that constitute in making the code efficient by helping in designing optimized solution. Algorithms are ‘scripts’ for writing the code in a particular language.
+What is a data structure?
+Nature loves organization and patterns. If we look inside a molecule atoms are packed in the most efficient way together. Even if we look at life around us all components seem to be arranged as per a system. And due to those arrangements they support the application of laws of nature.
+
+Living beings inherit genes from their parents. The information is packed beautifully in small cellular components. The genetic code carried to an offspring from a parent carries enormous data, making it a marvellous ‘data structure’ and then the ‘algorithm’ of life plays out, using genetic data and turning offspring into a replica of its parents. This arrangement is so magnificent that genetic data gets passed on safely for generations without being lost.
+Here we can say that
+“A data structure is a format for storing, organizing and managing data in an addresable way that facilitates efficient execution of any process including that data.”
+
+What is an Algorithm?
+The solution to the problem can written in text or mathematical form or explained verbally for humans. But machines understand programming language. In order to write a code in that language first the blue print has to be written which will accept the input data, process it and fetch the output.
+For utilising this data stored safely in our data structures we need a procedure, a ‘recipe’ in order to obtain required outputs. These procedures are called algorithms which are,
+“An unambiguous, finite sequence of instructions to solve a well defined problem.”
+
+Solution Vs Algorithm Vs code
+An algorithm is not a code. Also a solution is not an algorithm. A problem is solved by the progrmmer first, this is called a solution. Then he writes a sequence of instructions that can be followed by machines called an algorithm . That set of instructions is then translated in a programming language understood by the computer and is termed as a code.
+Solution----》 Algorithm -----》code
+In practice, many such codes are integrated together to form a project.
+Thus, before learning a programming language one must be thorough with the concepts of data structures, their efficient use and solutions turned into algorithms. Only after this one can become an efficient programmer.
+Types of data structures
+Generally theses data structures are used by programmers
+Array — this is the simplest data structure supporting linear data storing in a sequential manner. Each element has an index indicating it’s position from the first element of the array.
+
+Source — geeksforgeeks.com
+The indexing in an array can be done starting from 0, 1 or ‘n’.
+
+Advantage — easy and quick implementation
+Disadvantage- memory allocation or size has to be mentioned in advance
+Application — arrays are used to implement more complex non-linear data structures like list, hash tables , heap etc.
+Linked list — It is a linear storage of data, where each element points towards the next element. That being said, it is not actually a linear allocation of physical memory to accommodate data continuously.
+
+It is linear because the data can be inserted or removed only in one dimension- lengthwise, making the list either longer or shorter. The elements are called ‘nodes’ and consist of two parts : data and link (address of next node). It should be viewed as
+
+Source- w3schools.com
+Here a pointer stores the address of the first node or element of the list, and that element points to the next node and so on. The last element doesn’t point to any address indicating the end of the list.
+2. While adding or removing a node other elements are not required to be shifted. Only the pointer of last node is needed to be change to the address of new node while addition. And only change in the link portion of previous node has to be done while deleting a node.
+3. We only allocate memory for the nodes we require, this causes an efficient memory utilisation.
+Disadvantages — 1. Accessing a node is time taking, as it is needed to be started from the head and go up to the required node.
+2. Going reverse in a linked list is not possible. This is rectified in a doubly linked list, where pointer to both previous and next nodes are stored with data in each node.
+Application- browsing web pages, going previous and next
+Stacks — it can be viewed as a ‘vertical’ arrangement of data where the last inserted data is at top and first inserted data is at bottom.
+
+Two main functions are performed on this data structure
+Push — to add data to the stack
+Pop — to take out last inserted data
+
+Source — wikipedia
+The norm of LIFO (last in first out) is applicable to stacks. In order to get last item we can directly go to the top of the stack. But if we have to take out data any deeper than that then we will have to remove all data entries prior to it.
+Advantages- 1.easy to implement
+2. Easy to perform reverse operations
+Disadvantage- the size of the stack has to be allocated before hand and cannot be changed
+Application- In practice, it can be applied to store the results of past operations such as command ‘undo’ in a Word document file etc. When a stack has reached its maximum potential and cannot accept more data that is referred to as a situation called “stack overflow".
+Queues — it is also a linear arrangement of data where new data is added from one end (rear) while old data is deleted from other end (front).
+
+Source — www.geeksforgeeks.com
+Unlike stacks, the norm of FIFO (first in first out) works here, i.e. the element inserted first will be removed first.
+
+The end used for insertion is not used for removal. While in stack, same end is used for both purposes.
+Advantage — both insertion and deletion become fast as are done at separate ends.
+Disadvantage- if we have to add new data while queue is full, so we may delete the first data for that purpose. Now, the front of the queue deleted and second element is the new front but the rear is still the last element i.e. the deletion did not fetch any new free space .
+Application- serving customer for online ticket booking. First come first serve.
+Tree — A non linear data structure that stores data in hierarchical manner i.e. data is at various ranks or levels. Here data is stored in nodes connected to the previous and next levels by edges.
+
+Source — wikipedia
+First node is called “root” , node out which branches are coming out to connect other nodes is called parent node while the nodes connected to the parent are called child node.
+In figure above, 2 is the root. 7 is the parent node of {2,10,6} , these three are also sibling nodes. 5, 11 and 4 having no child nodes are called leaf nodes signifying the last level of a subtree.
+Advantage — 1.useful in storing hierarchical data as opposed to linear structures.
+2. Efficient searching and accessing
+Disadvantage- the data cannot be unrelated or independent of each other. There must be some hierarchical relation.
+Application- used in storing hierarchical data like, file system in a computer.
+Graph — it is a data structure consisting of nodes connected by edges. It is different from tree as no hierarchy is present. It is a network structure and not a hierarchical structure.
+
+Source — geeksforgeeks.com
+It consists of a set of vertices V = {0, 1, 2 , 4}
+Set of edges E = { 0e1, 1e2, 2e3, 3e4, 4e0, 1e4, 1e3}
+Advantage — helpful in storing non related data , non linearly
+Disadvantage- many edges are included which require memory space
+Application — in Facebook a person and all his friends are considered to be vertices while ‘friends’ status are the edges.
+There are many complex data structures used by the programmers in practice. For real world programmes will require real data which can only be stored by these —
+Hash tables
+Heap
+Trie
+Binary search tree
+Segment tree
+Binary indexed tree
+Suffix tree
+And so on.
+
